@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="assets/favicon.ico"
+      type="image/x-icon" />
+    <!-- Include Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous" />
+
+    <!-- Include Bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="responsiveness.css" />
+    <link rel="stylesheet" href="explore.css" />
+
+    <title>Explore / X</title>
+  </head>
+  <body>
+    <div class="tw-container">
+      <div class="tw-row">
+        <div class="tw-col-1">
+          <!-- SIDEBAR (same as index.html) -->
+          <header class="header px-2">
+            <section class="main-menu">
+              <nav class="main-nav">
+                <div class="logo">
+                  <a
+                    href="index.html"
+                    class="tw-btn fs-4 rounded-circle tw-btn-logo">
+                    <i class="bi bi-twitter-x"></i>
+                  </a>
+                </div>
+                <ul class="menu tw-sm">
+                  <!-- Home -->
+                  <li class="menu-item">
+                    <a href="index.html" class="tw-btn tw-btn-md-outline">
+                      <i class="bi bi-house-door"></i>
+                      <span class="menu-label tw-sm-hide">Home</span>
+                    </a>
+                  </li>
+                  <!-- Explore -->
+                  <li class="menu-item">
+                    <a href="explore.html" class="tw-btn tw-btn-md-outline active">
+                      <i class="bi bi-search"></i>
+                      <span class="menu-label tw-sm-hide">Explore</span>
+                    </a>
+                  </li>
+                  <!-- Notifications -->
+                  <li class="menu-item">
+                    <a href="#" class="tw-btn tw-btn-md-outline">
+                      <i class="bi bi-bell"></i>
+                      <span class="menu-label tw-sm-hide">Notifications</span>
+                    </a>
+                  </li>
+                  <!-- Follow -->
+                  <li class="menu-item">
+                    <a href="#" class="tw-btn tw-btn-md-outline">
+                      <i class="bi bi-person-plus"></i>
+                      <span class="menu-label tw-sm-hide">Follow</span>
+                    </a>
+                  </li>
+                  <!-- Chat -->
+                  <li class="menu-item">
+                    <a href="#" class="tw-btn tw-btn-md-outline">
+                      <i class="bi bi-envelope"></i>
+                      <span class="menu-label tw-sm-hide">Chat</span>
+                    </a>
+                  </li>
+                  <!-- Grok -->
+                  <li class="menu-item">
+                    <a href="#" class="tw-btn tw-btn-md-outline">
+                      <i class="bi bi-slash-square"></i>
+                      <span class="menu-label tw-sm-hide">Grok</span>
+                    </a>
+                  </li>
+                  <!-- Premium -->
+                  <li class="menu-item">
+                    <a href="#" class="tw-btn tw-btn-md-outline">
+                      <i class="bi bi-twitter-x"></i>
+                      <span class="menu-label tw-sm-hide">Premium</span>
+                    </a>
+                  </li>
+                  <!-- Profile -->
+                  <li class="menu-item">
+                    <a href="#" class="tw-btn tw-btn-md-outline">
+                      <i class="bi bi-person"></i>
+                      <span class="menu-label tw-sm-hide">Profile</span>
+                    </a>
+                  </li>
+                  <!-- More -->
+                  <li class="menu-item">
+                    <a href="#" class="tw-btn tw-btn-md-outline">
+                      <i class="bi bi-three-dots"></i>
+                      <span class="menu-label tw-sm-hide">More</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="post-box tw-sm">
+                <a href="index.html" class="tw-btn tw-btn-lg">
+                  <span class="tw-sm-hide">Post</span>
+                  <i class="bi bi-feather tw-lg-hide"></i>
+                </a>
+              </div>
+            </section>
+            <section class="section-account">
+              <button class="tw-btn tw-btn-account tw-sm-hide">
+                <div class="account-box">
+                  <a href="login.html" class="account-link">
+                    <img
+                      class="account-img ut-rounded"
+                      src="assets/profile.jpg"
+                      alt="my profile picture" />
+                  </a>
+                  <span class="account-info tw-sm-hide">
+                    <p class="account-name">Nompilo Shabangu</p>
+                    <p class="account-username">@itsNompilo</p>
+                  </span>
+                  <i class="bi bi-three-dots tw-sm-hide"></i>
+                </div>
+              </button>
+
+              <a href="login.html" class="account-link tw-lg-hide">
+                <img
+                  class="account-img ut-rounded"
+                  src="assets/profile.jpg"
+                  alt="my profile picture" />
+              </a>
+            </section>
+          </header>
+        </div>
+
+        <div class="tw-col-2">
+          <main class="main">
+            <div class="tw-row tw-row-justify">
+              <div class="tw-col-3">
+                <div class="main-content">
+                  <!-- Mobile header -->
+                  <div class="tw-sm-header">
+                    <button class="tw-btn tw-btn-account">
+                      <div class="account-box">
+                        <a href="#" class="account-link">
+                          <img
+                            class="account-img ut-rounded"
+                            src="assets/profile.jpg"
+                            alt="my profile picture" />
+                        </a>
+                      </div>
+                    </button>
+                    <a href="explore.html" class="sm-home-link">Explore</a>
+                  </div>
+
+                  <!-- Search bar -->
+                  <div class="explore-search">
+                    <form class="search-form explore-search-form" action="">
+                      <input
+                        class="search-input"
+                        placeholder="Search"
+                        type="text" />
+                      <div class="search-icon">
+                        <i class="bi bi-search"></i>
+                      </div>
+                    </form>
+                    <button class="tw-btn tw-btn-md-outline explore-settings-btn" title="Settings">
+                      <i class="bi bi-gear"></i>
+                    </button>
+                  </div>
+
+                  <!-- Category tabs -->
+                  <nav class="explore-tabs ut-border-bottom">
+                    <a href="#" class="tw-btn tw-btn-tab tw-btn-tab-active">For you</a>
+                    <a href="#" class="tw-btn tw-btn-tab">Trending</a>
+                    <a href="#" class="tw-btn tw-btn-tab">News</a>
+                    <a href="#" class="tw-btn tw-btn-tab">Sports</a>
+                    <a href="#" class="tw-btn tw-btn-tab">Entertainment</a>
+                  </nav>
+
+                  <!-- Trending list -->
+                  <section class="explore-trending">
+                    <h2 class="secondary-heading explore-section-title">Trends for you</h2>
+
+                    <div class="explore-trend ut-border-bottom">
+                      <div class="explore-trend-info">
+                        <span class="topic">Trending in South Africa</span>
+                        <p class="trending-name">Foster</p>
+                      </div>
+                      <button class="btn-more" title="More">
+                        <i class="bi bi-three-dots"></i>
+                      </button>
+                    </div>
+
+                    <div class="explore-trend ut-border-bottom">
+                      <div class="explore-trend-info">
+                        <span class="topic">Trending in South Africa</span>
+                        <p class="trending-name">BigBrotherBazozwa</p>
+                      </div>
+                      <button class="btn-more" title="More">
+                        <i class="bi bi-three-dots"></i>
+                      </button>
+                    </div>
+
+                    <div class="explore-trend ut-border-bottom">
+                      <div class="explore-trend-info">
+                        <span class="topic">Trending in South Africa</span>
+                        <p class="trending-name">Zwane</p>
+                      </div>
+                      <button class="btn-more" title="More">
+                        <i class="bi bi-three-dots"></i>
+                      </button>
+                    </div>
+
+                    <div class="explore-trend ut-border-bottom">
+                      <div class="explore-trend-info">
+                        <span class="topic">Trending in South Africa</span>
+                        <p class="trending-name">MacG</p>
+                      </div>
+                      <button class="btn-more" title="More">
+                        <i class="bi bi-three-dots"></i>
+                      </button>
+                    </div>
+
+                    <div class="explore-trend ut-border-bottom">
+                      <div class="explore-trend-info">
+                        <span class="topic">Trending in South Africa</span>
+                        <p class="trending-name">Bafana Bafana</p>
+                      </div>
+                      <button class="btn-more" title="More">
+                        <i class="bi bi-three-dots"></i>
+                      </button>
+                    </div>
+
+                    <div class="explore-trend ut-border-bottom">
+                      <div class="explore-trend-info">
+                        <span class="topic">Sports · Trending</span>
+                        <p class="trending-name">Manchester City</p>
+                        <span class="topic">284K posts</span>
+                      </div>
+                      <button class="btn-more" title="More">
+                        <i class="bi bi-three-dots"></i>
+                      </button>
+                    </div>
+
+                    <div class="explore-trend ut-border-bottom">
+                      <div class="explore-trend-info">
+                        <span class="topic">Entertainment · Trending</span>
+                        <p class="trending-name">Beyoncé</p>
+                        <span class="topic">540K posts</span>
+                      </div>
+                      <button class="btn-more" title="More">
+                        <i class="bi bi-three-dots"></i>
+                      </button>
+                    </div>
+
+                    <div class="explore-trend ut-border-bottom">
+                      <div class="explore-trend-info">
+                        <span class="topic">Technology · Trending</span>
+                        <p class="trending-name">#AI</p>
+                        <span class="topic">1.2M posts</span>
+                      </div>
+                      <button class="btn-more" title="More">
+                        <i class="bi bi-three-dots"></i>
+                      </button>
+                    </div>
+
+                    <div class="explore-trend ut-border-bottom">
+                      <div class="explore-trend-info">
+                        <span class="topic">Music · Trending</span>
+                        <p class="trending-name">#AmaPiano</p>
+                        <span class="topic">320K posts</span>
+                      </div>
+                      <button class="btn-more" title="More">
+                        <i class="bi bi-three-dots"></i>
+                      </button>
+                    </div>
+
+                    <div class="explore-trend ut-border-bottom">
+                      <div class="explore-trend-info">
+                        <span class="topic">Sports · Trending</span>
+                        <p class="trending-name">Springboks</p>
+                        <span class="topic">97.3K posts</span>
+                      </div>
+                      <button class="btn-more" title="More">
+                        <i class="bi bi-three-dots"></i>
+                      </button>
+                    </div>
+
+                    <div class="explore-trend ut-border-bottom">
+                      <div class="explore-trend-info">
+                        <span class="topic">Entertainment · Trending</span>
+                        <p class="trending-name">Glen Powell</p>
+                        <span class="topic">18.9K posts</span>
+                      </div>
+                      <button class="btn-more" title="More">
+                        <i class="bi bi-three-dots"></i>
+                      </button>
+                    </div>
+
+                    <div class="explore-trend ut-border-bottom">
+                      <div class="explore-trend-info">
+                        <span class="topic">Trending in South Africa</span>
+                        <p class="trending-name">#LoadShedding</p>
+                        <span class="topic">67.1K posts</span>
+                      </div>
+                      <button class="btn-more" title="More">
+                        <i class="bi bi-three-dots"></i>
+                      </button>
+                    </div>
+
+                    <a href="#" class="show-more explore-show-more">Show more</a>
+                  </section>
+                </div>
+              </div>
+
+              <!-- Right sidebar -->
+              <div class="tw-col-4">
+                <aside class="side-content">
+                  <!-- Today's News -->
+                  <section class="news-section explore-news">
+                    <div class="news-container">
+                      <h2 class="secondary-heading">Today's News</h2>
+                      <ul class="news-list">
+                        <li class="news-item">
+                          <a href="#" class="news-link">
+                            <div class="news-meta">
+                              <span class="news-time">7hours ago</span>
+                              <span class="news-dot">·</span>
+                              <span class="news-category">Sports</span>
+                              <span class="news-dot">·</span>
+                              <span class="news-posts">64.7k posts</span>
+                            </div>
+                            <p class="news-headline">England Draws 1-1 with Uruguay in Tense World Cup Warm-Up</p>
+                          </a>
+                        </li>
+                        <li class="news-item">
+                          <a href="#" class="news-link">
+                            <div class="news-meta">
+                              <span class="news-time">3 hours ago</span>
+                              <span class="news-dot">·</span>
+                              <span class="news-category">Entertainment</span>
+                              <span class="news-dot">·</span>
+                              <span class="news-posts">140 posts</span>
+                            </div>
+                            <p class="news-headline">Beyoncé Fans Discuss Surprise Revelation of Her Relationship and Marriage to Jay-Z</p>
+                          </a>
+                        </li>
+                        <li class="news-item">
+                          <a href="#" class="news-link">
+                            <div class="news-meta">
+                              <span class="news-time">3 hours ago</span>
+                              <span class="news-dot">·</span>
+                              <span class="news-category">Entertainment</span>
+                              <span class="news-dot">·</span>
+                              <span class="news-posts">248 posts</span>
+                            </div>
+                            <p class="news-headline">Social Media Users Debate Glen Powell's Movie Star Status After Recent Flops</p>
+                          </a>
+                        </li>
+                      </ul>
+                      <a href="#" class="show-more">Show more</a>
+                    </div>
+                  </section>
+
+                  <!-- Who to follow -->
+                  <section class="follow-section explore-follow">
+                    <div class="follow-container">
+                      <h2 class="secondary-heading">Who to follow</h2>
+                      <ul class="accounts">
+
+                        <!-- Account 1 -->
+                        <li class="account">
+                          <div class="account-container">
+                            <a href="#" class="account-link">
+                              <img
+                                src="assets/megan-profile.jpg"
+                                alt="megan the stallion profile picture"
+                                class="account-img ut-rounded" />
+                            </a>
+                            <div class="account-info">
+                              <a href="#" class="account-name">
+                                <span>TINA SNOW</span>
+                                <i class="bi bi-patch-check-fill badge-blue"></i>
+                              </a>
+                              <a href="#" class="account-username"
+                                >@theestallion</a
+                              >
+                            </div>
+                          </div>
+                          <a href="#" class="tw-btn tw-btn-xm">Follow</a>
+                        </li>
+
+                        <!-- Account 2 -->
+                        <li class="account">
+                          <div class="account-container">
+                            <a href="#" class="account-link">
+                              <img
+                                src="assets/2000s-profile.jpg"
+                                alt="2000s Profile Picture"
+                                class="account-img ut-rounded" />
+                            </a>
+                            <div class="account-info">
+                              <a href="#" class="account-name">
+                                <span>2000s</span>
+                                <i
+                                  class="bi bi-patch-check-fill badge-blue"></i>
+                              </a>
+                              <a href="#" class="account-username">@PopCulture2000s</a>
+                            </div>
+                          </div>
+                          <a href="#" class="tw-btn tw-btn-xm">Follow</a>
+                        </li>
+
+                        <!-- Account 3 -->
+                        <li class="account">
+                          <div class="account-container">
+                            <a href="#" class="account-link">
+                              <img
+                                src="assets/sabc-news-profile.jpg"
+                                alt="sabc news profile picture"
+                                class="account-img ut-rounded" />
+                            </a>
+                            <div class="account-info">
+                              <a href="#" class="account-name">
+                                <span>SABC News</span>
+                                <i
+                                  class="bi bi-patch-check-fill badge-blue"></i>
+                              </a>
+                              <a href="#" class="account-username">@SABCNews</a>
+                            </div>
+                          </div>
+                          <a href="#" class="tw-btn tw-btn-xm">Follow</a>
+                        </li>
+                      </ul>
+
+                      <a href="#" class="show-more">Show more</a>
+                    </div>
+                  </section>
+
+                  <footer class="footer">
+                    <nav class="footer-nav">
+                      <ul class="footer-menu">
+                        <li class="footer-item">
+                          <a href="#" class="footer-link">Terms of Services</a>
+                        </li>
+                        <li class="footer-item">
+                          <a href="#" class="footer-link">Privacy Policy</a>
+                        </li>
+                        <li class="footer-item">
+                          <a href="#" class="footer-link">Cookie Policy</a>
+                        </li>
+                        <li class="footer-item">
+                          <a href="#" class="footer-link">Accessibility</a>
+                        </li>
+                        <li class="footer-item">
+                          <a href="#" class="footer-link">Ads info</a>
+                        </li>
+                        <li class="footer-item">
+                          <a href="#" class="footer-link">
+                            <span>More</span>
+                            <i class="bi bi-three-dots"></i>
+                          </a>
+                        </li>
+                        <li class="footer-item">
+                          <a href="#" class="footer-link"
+                            >&copy; 2026 X Corp.</a
+                          >
+                        </li>
+                      </ul>
+                    </nav>
+                  </footer>
+                </aside>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
