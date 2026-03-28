@@ -181,9 +181,9 @@
 
   .tw-btn-xm {
     max-width: 100%;
-    min-width: 80px;
+    min-width: 60px;
     font-size: 14px;
-    padding: 0 10px;
+    padding: 0 8px;
     white-space: normal;
     box-sizing: border-box;
   }
@@ -204,6 +204,7 @@
 
   .explore-trend {
     flex-wrap: wrap;
+    align-items: flex-start;
     min-width: 0;
   }
 
@@ -213,6 +214,20 @@
     word-break: break-word;
     overflow-wrap: break-word;
     font-size: 14px;
+  }
+
+  /* Ensure all text and buttons fit and wrap */
+  .explore-trend,
+  .explore-trend-info,
+  .trending-name,
+  .topic,
+  .account-info,
+  .news-headline {
+    min-width: 0;
+    max-width: 100%;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
   }
 }
 
