@@ -1,0 +1,281 @@
+/* ===== Login Page ===== */
+
+.login-body {
+  min-height: 100vh;
+  background-color: var(--bg);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.login-page {
+  display: flex;
+  flex: 1;
+}
+
+/* Left hero panel */
+.login-hero {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg);
+}
+
+.login-hero-logo {
+  font-size: min(22vw, 360px);
+}
+
+/* Small logo – hidden on large screens, shown when hero hides */
+.login-small-logo {
+  display: none;
+  font-size: 32px;
+  color: var(--text-color);
+  margin-bottom: 16px;
+}
+
+/* Right form panel */
+.login-form-side {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 40px;
+}
+
+.login-form-container {
+  max-width: 440px;
+  width: 100%;
+}
+
+.login-heading {
+  font-size: clamp(36px, 6vw, 68px);
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 8px;
+}
+
+.login-subheading {
+  font-size: clamp(20px, 3vw, 26px);
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 28px 0 20px;
+}
+
+/* Social buttons */
+.login-socials {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 300px;
+}
+
+.login-social-btn {
+  height: 40px;
+  font-size: 14px;
+  font-weight: 500;
+  gap: 8px;
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+}
+
+.login-social-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.login-social-icon-apple {
+  font-size: 18px;
+}
+
+/* Divider */
+.login-divider {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 8px 0;
+  max-width: 300px;
+}
+
+.login-divider-line {
+  flex: 1;
+  height: 1px;
+  background-color: var(--border);
+}
+
+.login-divider-text {
+  font-size: 15px;
+}
+
+/* Create account button */
+.login-create-btn {
+  max-width: 300px;
+  width: 100%;
+  height: 40px;
+  font-size: 15px;
+  font-weight: 700;
+  background-color: var(--text-color);
+  color: var(--bg);
+}
+
+.login-create-btn:hover {
+  background-color: #d6d9db;
+  filter: none;
+}
+.login-terms {
+  font-size: 11px;
+  line-height: 1.4;
+  color: var(--muted);
+  margin-top: 8px;
+  max-width: 300px;
+}
+
+.login-terms a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+.login-terms a:hover {
+  text-decoration: underline;
+}
+
+/* Sign in section */
+.login-signin {
+  margin-top: 36px;
+}
+
+.login-signin-heading {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+/* Sign in button (link) */
+.login-signin-btn {
+  max-width: 300px;
+  width: 100%;
+  height: 40px;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  background-color: transparent;
+  color: var(--text-color);
+  border: 1px solid var(--border);
+  border-radius: 9999px;
+}
+
+.login-signin-btn:hover {
+  background-color: rgba(231, 233, 234, 0.1);
+}
+.login-grok-btn {
+  max-width: 300px;
+  width: 100%;
+  height: 40px;
+  font-size: 15px;
+  font-weight: 700;
+  gap: 8px;
+  margin-top: 12px;
+  text-decoration: none;
+  background-color: transparent;
+  color: var(--text-color);
+  border: 1px solid var(--border);
+  border-radius: 9999px;
+}
+
+.login-grok-btn:hover {
+  background-color: rgba(231, 233, 234, 0.1);
+}
+
+/* Footer */
+.login-footer {
+  padding: 12px 16px;
+  text-align: center;
+}
+
+.login-footer-menu {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px 16px;
+}
+
+.login-footer-menu a {
+  font-size: 13px;
+  color: var(--muted);
+  text-decoration: none;
+  line-height: 1.2;
+}
+
+.login-footer-menu a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width: 1024px) {
+  .login-hero {
+    display: none;
+  }
+
+  .login-small-logo {
+    display: inline-block;
+  }
+
+  .login-form-side {
+    padding: 32px 24px;
+  }
+}
+
+@media (max-width: 500px) {
+  .login-form-side {
+    padding: 24px 16px;
+  }
+
+  .login-heading {
+    font-size: clamp(28px, 8vw, 36px);
+  }
+
+  .login-socials,
+  .login-create-btn,
+  .login-divider,
+  .login-terms,
+  .login-signin-btn,
+  .login-grok-btn {
+    max-width: 260px;
+  }
+}
+
+/* ===== Light mode overrides ===== */
+@media (prefers-color-scheme: light) {
+  .login-social-btn {
+    border: 1px solid var(--border);
+    background-color: #fff;
+    color: #0f1419;
+  }
+
+  .login-social-btn:hover {
+    background-color: #f7f9f9;
+    filter: none;
+  }
+
+  .login-create-btn:hover {
+    background-color: #272c30;
+    filter: none;
+  }
+
+  .login-signin-btn {
+    color: #0f1419;
+  }
+
+  .login-signin-btn:hover {
+    background-color: rgba(15, 20, 25, 0.05);
+  }
+
+  .login-grok-btn:hover {
+    background-color: rgba(15, 20, 25, 0.05);
+  }
+}
