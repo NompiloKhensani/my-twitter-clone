@@ -83,9 +83,17 @@
   margin-top: 0;
 }
 
+/* Remove dividing lines between news and follow sections */
+.news-section,
+.follow-section {
+  border-bottom: none !important;
+  border-top: none !important;
+  margin-bottom: 0;
+}
+
 /* ===== Responsive ===== */
 
-@media (max-width: 530px) {
+@media (max-width: 768px) {
   .explore-search {
     position: relative;
     top: auto;
@@ -94,6 +102,16 @@
   .explore-tabs {
     position: relative;
     top: auto;
+  }
+}
+
+@media (max-width: 530px) {
+  .explore-search {
+    position: relative;
+    top: auto;
+  }
+
+  .explore-tabs {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
@@ -102,6 +120,56 @@
     flex: 0 0 auto;
     padding: 0 16px;
   }
+
+  /* Stack sections vertically and show sidebar content */
+  .tw-row-justify {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .tw-col-3,
+  .tw-col-4 {
+    flex-basis: 100%;
+    width: 100%;
+  }
+
+  .tw-col-4 {
+    display: block;
+  }
+
+  .explore-trending {
+    margin-bottom: 0;
+  }
+
+  .explore-news {
+    margin-top: 0;
+  }
+
+  .side-content {
+    position: relative;
+    top: auto;
+    height: auto;
+  }
+
+  .main-content {
+    border-left: none;
+    border-right: none;
+  }
+
+  .news-container,
+  .follow-container {
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+  }
+
+  .explore-trending .explore-trend {
+    border: none;
+  }
+
+  .explore-show-more {
+    display: none;
+  }
 }
 
 /* ===== Light mode ===== */
@@ -109,4 +177,9 @@
   .explore-trend:hover {
     background-color: rgba(15, 20, 25, 0.05);
   }
+}
+
+/* Remove border-bottom from news list items in Today's News */
+.news-list .news-item {
+  border-bottom: none !important;
 }
