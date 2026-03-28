@@ -111,7 +111,11 @@
     left: 0;
     background-color: var(--bg);
     z-index: 10;
-    transition: all 0.4s;
+    transition: transform 0.3s ease;
+  }
+
+  .header--hidden {
+    transform: translateY(100%);
   }
 
   .main-menu {
