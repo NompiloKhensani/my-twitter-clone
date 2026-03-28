@@ -107,128 +107,177 @@
 }
 
 @media (max-width: 530px) {
-  .explore-search {
-    position: relative;
-    top: auto;
+  /* Hide right sidebar (Who to Follow, News, etc.) on small screens for X-like experience */
+  .tw-col-4,
+  .side-content,
+  .explore-follow {
+    display: none !important;
   }
-
-  .explore-tabs {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .explore-tabs .tw-btn-tab {
-    flex: 0 0 auto;
-    padding: 0 16px;
-  }
-
-  /* Stack sections vertically and show sidebar content */
-  .tw-row-justify {
-    flex-direction: column;
-    gap: 0;
-  }
-
+  /* Make main content full width */
   .tw-col-3,
-  .tw-col-4 {
-    flex-basis: 100%;
-    width: 100%;
-  }
-
-  .tw-col-4 {
-    display: block;
-  }
-
-  .explore-trending {
-    margin-bottom: 0;
-  }
-
-  .explore-news {
-    margin-top: 0;
-  }
-
-  .side-content {
-    position: relative;
-    top: auto;
-    height: auto;
-  }
-
   .main-content {
-    border-left: none;
-    border-right: none;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
   }
-
-  .news-container,
-  .follow-container {
-    border-radius: 0;
-    border-left: none;
-    border-right: none;
-  }
-
-  .explore-trending .explore-trend {
-    border: none;
-  }
-
-  .explore-show-more {
-    display: none;
-  }
-
-  /* Fix follow button and trending text overflow */
-  .follow-container {
-    flex-wrap: wrap;
-    word-break: break-word;
-    overflow-wrap: break-word;
-  }
-
-  .tw-btn-xm {
-    max-width: 100%;
-    min-width: 60px;
-    font-size: 14px;
-    padding: 0 8px;
-    white-space: normal;
-    box-sizing: border-box;
-  }
-
-  .account-info {
-    min-width: 0;
-    max-width: 100%;
-    word-break: break-word;
-    overflow-wrap: break-word;
-  }
-
-  .explore-trend-info {
-    min-width: 0;
-    max-width: 100%;
-    word-break: break-word;
-    overflow-wrap: break-word;
-  }
-
-  .explore-trend {
-    flex-wrap: wrap;
-    align-items: flex-start;
-    min-width: 0;
-  }
-
-  .trending-name, .topic {
-    min-width: 0;
-    max-width: 100%;
-    word-break: break-word;
-    overflow-wrap: break-word;
-    font-size: 14px;
-  }
-
-  /* Ensure all text and buttons fit and wrap */
+  /* Ensure trending and search fit */
   .explore-trend,
   .explore-trend-info,
   .trending-name,
-  .topic,
-  .account-info,
-  .news-headline {
+  .topic {
     min-width: 0;
     max-width: 100%;
     word-break: break-word;
     overflow-wrap: break-word;
     white-space: normal;
   }
+  .explore-trend {
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  /* Show right sidebar sections and stack them */
+  .tw-col-4,
+  .side-content,
+  .explore-news,
+  .explore-follow {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100vw !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+  .side-content {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px;
+    width: 100% !important;
+  }
+  .news-container,
+  .follow-container {
+    width: 100% !important;
+    max-width: 100vw !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+  /* Remove extra margin and border for stacking */
+  .explore-news {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .news-section,
+  .follow-section {
+    border: none !important;
+    margin-bottom: 0;
+  }
+}
+
+/* Stack sections vertically and show sidebar content */
+.tw-row-justify {
+  flex-direction: column;
+  gap: 0;
+}
+
+.tw-col-3,
+.tw-col-4 {
+  flex-basis: 100%;
+  width: 100%;
+}
+
+.tw-col-4 {
+  display: block;
+}
+
+.explore-trending {
+  margin-bottom: 0;
+}
+
+.explore-news {
+  margin-top: 0;
+}
+
+.side-content {
+  position: relative;
+  top: auto;
+  height: auto;
+}
+
+.main-content {
+  border-left: none;
+  border-right: none;
+}
+
+.news-container,
+.follow-container {
+  border-radius: 0;
+  border-left: none;
+  border-right: none;
+}
+
+.explore-trending .explore-trend {
+  border: none;
+}
+
+.explore-show-more {
+  display: none;
+}
+
+/* Fix follow button and trending text overflow */
+.follow-container {
+  flex-wrap: wrap;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.tw-btn-xm {
+  max-width: 100%;
+  min-width: 60px;
+  font-size: 14px;
+  padding: 0 8px;
+  white-space: normal;
+  box-sizing: border-box;
+}
+
+.account-info {
+  min-width: 0;
+  max-width: 100%;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.explore-trend-info {
+  min-width: 0;
+  max-width: 100%;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.explore-trend {
+  flex-wrap: wrap;
+  align-items: flex-start;
+  min-width: 0;
+}
+
+.trending-name, .topic {
+  min-width: 0;
+  max-width: 100%;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  font-size: 14px;
+}
+
+/* Ensure all text and buttons fit and wrap */
+.explore-trend,
+.explore-trend-info,
+.trending-name,
+.topic,
+.account-info,
+.news-headline {
+  min-width: 0;
+  max-width: 100%;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
 }
 
 /* ===== Light mode ===== */
